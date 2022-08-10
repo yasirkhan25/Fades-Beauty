@@ -27,6 +27,7 @@ class Assets {
   static const String iconsGroup = 'assets/icons/Group.svg';
   static const String iconsGroup (3) = 'assets/icons/Group (3).png';
   static const String iconsHeroicons-solidMenu-alt-2 = 'assets/icons/heroicons-solid_menu-alt-2.png';
+  static const String iconsImage 98 (1) = 'assets/icons/image 98 (1).png';
   static const String iconsLogosPaypal = 'assets/icons/logos_paypal.png';
   static const String iconsMask = 'assets/icons/Mask.svg';
   static const String iconsMessage-square = 'assets/icons/message-square.png';

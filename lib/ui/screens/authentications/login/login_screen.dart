@@ -47,7 +47,7 @@ class LogInScreen extends StatelessWidget {
                 ),
                 CustomTextFieldContainer(
                   myHintText: 'Email',
-                  myIcon: Icon(Icons.mail_outline),
+                  myIcon: Icon(Icons.mail_outline_outlined),
                 ),
                 SizedBox(
                   height: 25,

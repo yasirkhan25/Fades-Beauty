@@ -3,6 +3,7 @@ import 'package:fades_and_beauty/core/constants/custom_buttons/custom_button.dar
 import 'package:fades_and_beauty/core/constants/custom_containers/appbar_container.dart';
 import 'package:fades_and_beauty/ui/screens/manu_layout/menu_layout.dart';
 import 'package:fades_and_beauty/ui/screens/my_profile/profile_provider.dart';
+import 'package:fades_and_beauty/ui/screens/seller_mode/seller_mode_profile.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -23,6 +24,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
       child: Consumer<ProfileScreenProvider>(builder: (context, model, child) {
         return Scaffold(
           appBar: AppBar(
+            centerTitle: true,
             toolbarHeight: 150.h,
             elevation: 0,
             shape: RoundedRectangleBorder(
@@ -30,9 +32,36 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                 bottom: Radius.circular(20),
               ),
             ),
-            title: AppBarContainer(
-              imageUrl: 'assets/images/Ellipse 81.png',
-              name: 'William',
+            title: Stack(
+              children: [
+                Column(
+                  children: [
+                    Image.asset(
+                      'assets/images/Ellipse 81.png',
+                      scale: 1,
+                    ),
+                    SizedBox(
+                      height: 5.h,
+                    ),
+                    Text(
+                      'Walliam',
+                      style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+                Positioned(
+                  top: 40.h,
+                  left: 35.w,
+                  child: Container(
+                      height: 30.h,
+                      width: 30.w,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      child: Image.asset('assets/icons/image 98 (1).png')),
+                )
+              ],
             ),
             actions: [
               Padding(
@@ -721,7 +750,13 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                       SizedBox(
                         height: 30.h,
                       ),
-                      CustomButton(text: 'Save'),
+                      InkWell( onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SellerModeProfileScreen()),
+                        );
+                      },child: CustomButton(text: 'Save')),
                     ],
                   ),
                 ),

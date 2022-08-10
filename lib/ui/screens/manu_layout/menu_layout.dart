@@ -3,6 +3,8 @@ import 'package:fades_and_beauty/ui/screens/home/home_screen.dart';
 import 'package:fades_and_beauty/ui/screens/my_profile/my_profile.dart';
 import 'package:fades_and_beauty/ui/screens/notification/notification_screen.dart';
 import 'package:fades_and_beauty/ui/screens/seller_mode/seller_mode_profile.dart';
+import 'package:fades_and_beauty/ui/screens/user_screens_flow/setting_screen/setting_screen.dart';
+import 'package:fades_and_beauty/ui/screens/user_screens_flow/user_profile/user_profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -173,7 +175,7 @@ class MenuDashBoardPage extends StatelessWidget {
                 InkWell(
                   onTap: () {
                     Navigator.push(
-                        context, MaterialPageRoute(builder: (context) => SellerModeProfileScreen()));
+                        context, MaterialPageRoute(builder: (context) => SettingScreen()));
                   },
                   child: Container(
                     height: 40.h,
@@ -202,27 +204,33 @@ class MenuDashBoardPage extends StatelessWidget {
                 SizedBox(
                   height: 200.h,
                 ),
-                Container(
-                  height: 40.h,
-                  // width: 100.w,
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.logout,
-                        color: Colors.white,
-                        size: 25,
-                      ),
-                      SizedBox(
-                        width: 20.w,
-                      ),
-                      Text(
-                        'Log out',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold),
-                      )
-                    ],
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (context) => UserProfileScreen()));
+                  },
+                  child: Container(
+                    height: 40.h,
+                    // width: 100.w,
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.logout,
+                          color: Colors.white,
+                          size: 25,
+                        ),
+                        SizedBox(
+                          width: 20.w,
+                        ),
+                        Text(
+                          'Log out',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ],

@@ -22,14 +22,14 @@ class _NotificationScreenState extends State<NotificationScreen> {
         return Scaffold(
           backgroundColor: Colors.white,
           appBar: AppBar(
-            toolbarHeight: 120.h,
+            toolbarHeight: 100.h,
             elevation: 0,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.vertical(
                 bottom: Radius.circular(20),
               ),
             ),
-            title: AppBarContainer(name: 'Notification',subname: '',),
+            title: AppBarContainer(name: 'Notification'),
           ),
           drawer: MenuDashBoardPage(),
           body: Column(

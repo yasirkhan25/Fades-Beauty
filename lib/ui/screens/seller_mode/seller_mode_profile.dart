@@ -7,7 +7,8 @@ import 'package:provider/provider.dart';
 
 class SellerModeProfileScreen extends StatefulWidget {
   @override
-  _SellerModeProfileScreenState createState() => _SellerModeProfileScreenState();
+  _SellerModeProfileScreenState createState() =>
+      _SellerModeProfileScreenState();
 }
 
 class _SellerModeProfileScreenState extends State<SellerModeProfileScreen> {
@@ -43,11 +44,9 @@ class _SellerModeProfileScreenState extends State<SellerModeProfileScreen> {
                         children: [
                           Container(
                             //height: MediaQuery.of(context).size.height *0.2,
-                            child: Center(
-                              child: Image.asset(
-                                'assets/images/Ellipse 81.png',
-                                scale: 1,
-                              ),
+                            child: Image.asset(
+                              'assets/images/Ellipse 81.png',
+                              scale: 1,
                             ),
                           ),
                           SizedBox(
@@ -59,6 +58,18 @@ class _SellerModeProfileScreenState extends State<SellerModeProfileScreen> {
                           ),
                         ],
                       ),
+                    ),
+                    Positioned(
+                      top: MediaQuery.of(context).size.height * 0.15,
+                      left: MediaQuery.of(context).size.width * 0.55,
+                      child: Container(
+                          height: 30.h,
+                          width: 30.w,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(50),
+                          ),
+                          child: Image.asset('assets/icons/image 98 (1).png')),
                     ),
                     Positioned(
                       top: MediaQuery.of(context).size.height * 0.24,
@@ -188,22 +199,24 @@ class _SellerModeProfileScreenState extends State<SellerModeProfileScreen> {
                         physics: ScrollPhysics(),
                         itemBuilder: (BuildContext context, int index) {
                           return Padding(
-                            padding: EdgeInsets.only(top: 10,bottom: 10),
+                            padding: EdgeInsets.only(top: 10, bottom: 10),
                             child: InkWell(
                               child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Color(0xFFFDFDFD),
-                                    borderRadius: BorderRadius.circular(12),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.black12,
-                                        blurRadius: 2,
-                                        offset: Offset(2, 0), // changes position of shadow
-                                      ),
-                                    ],
-                                  ),
+                                decoration: BoxDecoration(
+                                  color: Color(0xFFFDFDFD),
+                                  borderRadius: BorderRadius.circular(12),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black12,
+                                      blurRadius: 2,
+                                      offset: Offset(
+                                          2, 0), // changes position of shadow
+                                    ),
+                                  ],
+                                ),
                                 child: Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: 10, vertical: 8),
                                   child: Row(
                                     children: [
                                       Container(
@@ -212,9 +225,9 @@ class _SellerModeProfileScreenState extends State<SellerModeProfileScreen> {
                                         padding: EdgeInsets.all(8),
                                         decoration: BoxDecoration(
                                           color: Color(0xFFE5E7F5),
-                                          borderRadius: BorderRadius.circular(8),
+                                          borderRadius:
+                                              BorderRadius.circular(8),
                                         ),
-
                                         child: Center(
                                           child: Image.asset(
                                             optionslist[index].imageUrl,
@@ -227,7 +240,8 @@ class _SellerModeProfileScreenState extends State<SellerModeProfileScreen> {
                                       Text(
                                         optionslist[index].name.toString(),
                                         style: TextStyle(
-                                            fontSize: 14, fontWeight: FontWeight.bold),
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.bold),
                                       ),
                                       Expanded(child: SizedBox()),
                                       Icon(Icons.arrow_forward_ios_rounded),

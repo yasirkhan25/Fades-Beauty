@@ -32,7 +32,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                 bottom: Radius.circular(20),
               ),
             ),
-            title: AppBarContainer(name: 'Notification',subname: '',),
+            title: AppBarContainer(name: 'Notification',),
           ),
           drawer: MenuDashBoardPage(),
           body: Column(

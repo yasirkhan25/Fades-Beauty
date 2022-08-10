@@ -3,6 +3,7 @@ import 'package:fades_and_beauty/core/constants/custom_containers/appbar_contain
 import 'package:fades_and_beauty/core/constants/colors/colors.dart';
 import 'package:fades_and_beauty/ui/screens/manu_layout/menu_layout.dart';
 import 'package:fades_and_beauty/ui/screens/seller_mode/seller_mode_provider.dart';
+import 'package:fades_and_beauty/ui/screens/user_screens_flow/buyer_question_screen/buyer_question_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -316,9 +317,18 @@ class _SummaryScreenState extends State<SummaryScreen> {
                           ],
                         ),
                       ),
-                      SizedBox(height: 20.h,),
-                      CustomButton(
-                        text: 'Checkout',
+                      SizedBox(height: 25.h,),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => BuyerQuestionScreen()),
+                          );
+                        },
+                        child: CustomButton(
+                          text: 'Checkout',
+                        ),
                       ),
                     ],
                   ),

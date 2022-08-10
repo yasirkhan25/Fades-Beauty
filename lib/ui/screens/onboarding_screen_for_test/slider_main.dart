@@ -1,4 +1,5 @@
-import 'package:fades_and_beauty/ui/screens/slider/slider_list.dart';
+
+import 'package:fades_and_beauty/ui/screens/onboarding_screen_for_test/slider_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
