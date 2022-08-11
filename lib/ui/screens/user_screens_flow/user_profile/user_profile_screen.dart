@@ -1,14 +1,7 @@
-import 'dart:ffi';
-
 import 'package:fades_and_beauty/core/constants/colors/colors.dart';
-import 'package:fades_and_beauty/core/constants/custom_buttons/custom_button.dart';
-import 'package:fades_and_beauty/core/constants/custom_containers/appbar_container.dart';
 import 'package:fades_and_beauty/ui/screens/manu_layout/menu_layout.dart';
-import 'package:fades_and_beauty/ui/screens/my_profile/profile_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class UserProfileScreen extends StatefulWidget {
@@ -65,17 +58,25 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
             padding: EdgeInsets.only(top: 25, right: 20),
             child: Align(
               alignment: Alignment.topRight,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.edit,
-                    size: 15,
-                  ),
-                  SizedBox(
-                    width: 5.w,
-                  ),
-                  Text('Edit Profile'),
-                ],
+              child: Container(
+                padding:
+                    EdgeInsets.only(left: 10, right: 10, top: 5, bottom: 5),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(25),
+                  border: Border.all(color: Colors.white, width: 1),
+                ),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.edit,
+                      size: 15,
+                    ),
+                    SizedBox(
+                      width: 5.w,
+                    ),
+                    Text('Edit Profile'),
+                  ],
+                ),
               ),
             ),
           )
@@ -113,10 +114,11 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                       SizedBox(
                         width: 15.w,
                       ),
-                      Text(
-                        'About me',
-                        style:
-                            TextStyle(color: Color(0xFF5A5A5A)),
+                      InkWell(
+                        child: Text(
+                          'About me',
+                          style: TextStyle(color: Color(0xFF5A5A5A)),
+                        ),
                       ),
                       Expanded(child: SizedBox()),
                       Icon(Icons.arrow_forward_ios_rounded),
@@ -152,7 +154,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                     ),
                     Text(
                       'Residence',
-                      style: TextStyle( color: Color(0xFF5A5A5A)),
+                      style: TextStyle(color: Color(0xFF5A5A5A)),
                     ),
                     Expanded(child: SizedBox()),
                     Icon(Icons.arrow_forward_ios_rounded),

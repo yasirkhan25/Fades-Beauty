@@ -27,7 +27,7 @@ class AppBarContainer extends StatelessWidget {
         name == null ? SizedBox():
         Text(
           name,
-          style: TextStyle(color: Colors.white, fontSize: 20),
+          style: TextStyle(color: Colors.white, fontSize: 18.sp),
         ),
         SizedBox(
           height: 5.h,
@@ -39,12 +39,12 @@ class AppBarContainer extends StatelessWidget {
             Icon(
               myIcon,
               color: Colors.white,
-              size: 20,
+              size: 18,
             ),
             subname == null ? SizedBox():
             Text(
               subname,
-              style: TextStyle(color: Colors.white, fontSize: 16),
+              style: TextStyle(color: Colors.white, fontSize: 14),
             ),
           ],
         ),

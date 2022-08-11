@@ -196,7 +196,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                   ),
                                   InkWell(
                                     onTap: () {
-                                      model.getValue(2);
+                                      model.getValue2(0);
                                     },
                                     child: Container(
                                       padding: EdgeInsets.all(3),
@@ -209,7 +209,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                         height: 10.h,
                                         width: 10.w,
                                         decoration: BoxDecoration(
-                                          color: model.value == 2
+                                          color: model.value2 == 0
                                               ? primaryColor
                                               : Colors.white,
                                           borderRadius:
@@ -227,7 +227,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                   ),
                                   InkWell(
                                     onTap: () {
-                                      model.getValue(3);
+                                      model.getValue2(1);
                                     },
                                     child: Container(
                                       padding: EdgeInsets.all(3),
@@ -240,7 +240,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                         height: 10.h,
                                         width: 10.w,
                                         decoration: BoxDecoration(
-                                          color: model.value == 3
+                                          color: model.value2 == 1
                                               ? primaryColor
                                               : Colors.white,
                                           borderRadius:
@@ -269,7 +269,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                   ),
                                   InkWell(
                                     onTap: () {
-                                      model.getValue(2);
+                                      model.getValue3(0);
                                     },
                                     child: Container(
                                       padding: EdgeInsets.all(3),
@@ -282,7 +282,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                         height: 10.h,
                                         width: 10.w,
                                         decoration: BoxDecoration(
-                                          color: model.value == 2
+                                          color: model.value3 == 0
                                               ? primaryColor
                                               : Colors.white,
                                           borderRadius:
@@ -300,7 +300,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                   ),
                                   InkWell(
                                     onTap: () {
-                                      model.getValue(2);
+                                      model.getValue3(1);
                                     },
                                     child: Container(
                                       padding: EdgeInsets.all(3),
@@ -313,7 +313,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                         height: 10.h,
                                         width: 10.w,
                                         decoration: BoxDecoration(
-                                          color: model.value == 2
+                                          color: model.value3 == 1
                                               ? primaryColor
                                               : Colors.white,
                                           borderRadius:
@@ -343,7 +343,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                   ),
                                   InkWell(
                                     onTap: () {
-                                      model.getValue(3);
+                                      model.getValue4(0);
                                     },
                                     child: Container(
                                       padding: EdgeInsets.all(3),
@@ -356,7 +356,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                         height: 10.h,
                                         width: 10.w,
                                         decoration: BoxDecoration(
-                                          color: model.value == 3
+                                          color: model.value4 == 0
                                               ? primaryColor
                                               : Colors.white,
                                           borderRadius:
@@ -374,7 +374,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                   ),
                                   InkWell(
                                     onTap: () {
-                                      model.getValue(3);
+                                      model.getValue4(1);
                                     },
                                     child: Container(
                                       padding: EdgeInsets.all(3),
@@ -387,7 +387,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                         height: 10.h,
                                         width: 10.w,
                                         decoration: BoxDecoration(
-                                          color: model.value == 3
+                                          color: model.value4 == 1
                                               ? primaryColor
                                               : Colors.white,
                                           borderRadius:
@@ -416,7 +416,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                   ),
                                   InkWell(
                                     onTap: () {
-                                      model.getValue(4);
+                                      model.getValue5(0);
                                     },
                                     child: Container(
                                       padding: EdgeInsets.all(3),
@@ -429,7 +429,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                         height: 10.h,
                                         width: 10.w,
                                         decoration: BoxDecoration(
-                                          color: model.value == 4
+                                          color: model.value5 == 0
                                               ? primaryColor
                                               : Colors.white,
                                           borderRadius:
@@ -447,7 +447,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                   ),
                                   InkWell(
                                     onTap: () {
-                                      model.getValue(4);
+                                      model.getValue5(1);
                                     },
                                     child: Container(
                                       padding: EdgeInsets.all(3),
@@ -460,7 +460,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                         height: 10.h,
                                         width: 10.w,
                                         decoration: BoxDecoration(
-                                          color: model.value == 4
+                                          color: model.value5 == 1
                                               ? primaryColor
                                               : Colors.white,
                                           borderRadius:
@@ -490,7 +490,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                   ),
                                   InkWell(
                                     onTap: () {
-                                      model.getValue(5);
+                                      model.getValue6(0);
                                     },
                                     child: Container(
                                       padding: EdgeInsets.all(3),
@@ -503,7 +503,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                         height: 10.h,
                                         width: 10.w,
                                         decoration: BoxDecoration(
-                                          color: model.value == 5
+                                          color: model.value6 == 0
                                               ? primaryColor
                                               : Colors.white,
                                           borderRadius:
@@ -521,7 +521,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                   ),
                                   InkWell(
                                     onTap: () {
-                                      model.getValue(5);
+                                      model.getValue6(1);
                                     },
                                     child: Container(
                                       padding: EdgeInsets.all(3),
@@ -534,7 +534,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
                                         height: 10.h,
                                         width: 10.w,
                                         decoration: BoxDecoration(
-                                          color: model.value == 5
+                                          color: model.value6 == 1
                                               ? primaryColor
                                               : Colors.white,
                                           borderRadius:

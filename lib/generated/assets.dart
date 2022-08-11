@@ -2,9 +2,13 @@
 class Assets {
   Assets._();
 
+  static const String assetsIconsIcOutline-discount = 'assets/icons/ic_outline-discount.svg';
+  static const String assetsIconsImage 102 = 'assets/icons/image 102.svg';
   static const String assetsIconsLogosPaypal = 'assets/icons/logos_paypal.svg';
   static const String assetsImagesEllipse 1 = 'assets/images/Ellipse 1.svg';
   static const String assetsImagesEllipse 785 = 'assets/images/Ellipse 785.svg';
+  static const String assetsImagesImage 106 = 'assets/images/image 106.svg';
+  static const String assetsImagesImage 109 = 'assets/images/image 109.svg';
   static const String assetsImagesImage 99 = 'assets/images/image 99.svg';
   static const String assetsImagesImage 99 (1) = 'assets/images/image 99 (1).svg';
   static const String assetsImagesRectangle 11 = 'assets/images/Rectangle 11.svg';
@@ -26,7 +30,12 @@ class Assets {
   static const String iconsGoogleIcon = 'assets/icons/google_icon_.png';
   static const String iconsGroup = 'assets/icons/Group.svg';
   static const String iconsGroup (3) = 'assets/icons/Group (3).png';
+  static const String iconsGroup 1000007232 = 'assets/icons/Group 1000007232.png';
+  static const String iconsGroup 5680 = 'assets/icons/Group 5680.png';
+  static const String iconsGroup 65 = 'assets/icons/Group 65.png';
   static const String iconsHeroicons-solidMenu-alt-2 = 'assets/icons/heroicons-solid_menu-alt-2.png';
+  static const String iconsIcOutline-discount = 'assets/icons/ic_outline-discount.png';
+  static const String iconsImage 102 = 'assets/icons/image 102.png';
   static const String iconsImage 98 (1) = 'assets/icons/image 98 (1).png';
   static const String iconsLogosPaypal = 'assets/icons/logos_paypal.png';
   static const String iconsMask = 'assets/icons/Mask.svg';
@@ -37,6 +46,9 @@ class Assets {
   static const String iconsVector = 'assets/icons/Vector.svg';
   static const String iconsVector1 = 'assets/icons/Vector_1.svg';
   static const String iconsVendorIcon = 'assets/icons/vendor_icon.png';
+  static const String imagesAttachment1633661667 = 'assets/images/Attachment_1633661667.png';
+  static const String imagesAttachment1633661667 (1) = 'assets/images/Attachment_1633661667 (1).png';
+  static const String imagesCapture 5 = 'assets/images/Capture 5.png';
   static const String imagesEllipse 1 = 'assets/images/Ellipse 1.png';
   static const String imagesEllipse 785 = 'assets/images/Ellipse 785.png';
   static const String imagesEllipse 81 = 'assets/images/Ellipse 81.png';
@@ -44,6 +56,14 @@ class Assets {
   static const String imagesGroup 5780 = 'assets/images/Group 5780.png';
   static const String imagesGroup 5800 = 'assets/images/Group 5800.png';
   static const String imagesGroup 5802 = 'assets/images/Group 5802.png';
+  static const String imagesImage 105 = 'assets/images/image 105.svg';
+  static const String imagesImage 105 (1) = 'assets/images/image 105 (1).png';
+  static const String imagesImage 106 = 'assets/images/image 106.png';
+  static const String imagesImage 108 = 'assets/images/image 108.svg';
+  static const String imagesImage 108 (1) = 'assets/images/image 108 (1).png';
+  static const String imagesImage 109 = 'assets/images/image 109.png';
+  static const String imagesImage 89 = 'assets/images/image 89.png';
+  static const String imagesImage 95 = 'assets/images/image 95.png';
   static const String imagesImage 98 = 'assets/images/image 98.png';
   static const String imagesImage 99 = 'assets/images/image 99.png';
   static const String imagesImage 99 (1) = 'assets/images/image 99 (1).png';
@@ -52,6 +72,7 @@ class Assets {
   static const String imagesMask = 'assets/images/Mask.png';
   static const String imagesMask (1) = 'assets/images/Mask (1).png';
   static const String imagesMask Group = 'assets/images/Mask Group.png';
+  static const String imagesRectangle 108 = 'assets/images/Rectangle 108.png';
   static const String imagesRectangle 11 = 'assets/images/Rectangle 11.png';
   static const String imagesRectangle 11 (1) = 'assets/images/Rectangle 11 (1).png';
   static const String imagesRectangle 11 (2) = 'assets/images/Rectangle 11 (2).png';
@@ -63,9 +84,12 @@ class Assets {
   static const String imagesRectangle 204 = 'assets/images/Rectangle 204.png';
   static const String imagesRectangle 205 = 'assets/images/Rectangle 205.png';
   static const String imagesRectangle 206 = 'assets/images/Rectangle 206.png';
+  static const String imagesRectangle 39393 = 'assets/images/Rectangle 39393.png';
+  static const String imagesRectangle 39393 (1) = 'assets/images/Rectangle 39393 (1).png';
   static const String imagesSlider1 = 'assets/images/slider1.svg';
   static const String imagesSlider2 = 'assets/images/slider2.svg';
   static const String imagesSlider3 = 'assets/images/slider3.svg';
+  static const String imagesUnsplashGntSiIMHyVM = 'assets/images/unsplash_GntSiIMHyVM.png';
   static const String imagesVector = 'assets/images/Vector.png';
 
 }

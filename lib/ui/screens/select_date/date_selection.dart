@@ -3,18 +3,20 @@ import 'package:fades_and_beauty/core/constants/custom_buttons/custom_button.dar
 import 'package:fades_and_beauty/core/constants/custom_containers/appbar_container.dart';
 import 'package:fades_and_beauty/ui/screens/manu_layout/menu_layout.dart';
 import 'package:fades_and_beauty/ui/screens/vendor_fill_form/vendor_fill_form.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 
 class DateSelectionScreen extends StatefulWidget {
+
   @override
   _DateSelectionScreenState createState() => _DateSelectionScreenState();
 }
 
 class _DateSelectionScreenState extends State<DateSelectionScreen> {
-  DateTime _dateTime = DateTime.now();
 
+  DateTime _chosenDateTime;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,15 +61,27 @@ class _DateSelectionScreenState extends State<DateSelectionScreen> {
                   DateTime.now().subtract(const Duration(days: 4)),
                   DateTime.now().add(const Duration(days: 3))),
             ),
-            Text(
-              _dateTime.hour.toString().padLeft(2, '0') +
-                  ':' +
-                  _dateTime.minute.toString().padLeft(2, '0') +
-                  ':' +
-                  _dateTime.second.toString().padLeft(2, '0'),
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+
+
+      Container(
+        height: 100,
+        color: const Color.fromARGB(255, 255, 255, 255),
+        child: Column(
+          children: [
+            SizedBox(
+              height: 100,
+              child: CupertinoDatePicker(
+                  initialDateTime: DateTime.now(),
+                  onDateTimeChanged: (val) {
+                    setState(() {
+                      _chosenDateTime = val;
+                    });
+                  }),
             ),
           ],
+        ),
+
+      )],
         ),
       ),
       bottomNavigationBar: InkWell(

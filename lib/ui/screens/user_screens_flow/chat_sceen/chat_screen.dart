@@ -31,10 +31,10 @@ class ChatScreen extends StatelessWidget {
           ),
           drawer: MenuDashBoardPage(),
           bottomNavigationBar: Padding(
-            padding: EdgeInsets.only(left: 15,right: 15,bottom: 15),
+            padding: EdgeInsets.only(left: 15, right: 15, bottom: 15),
             child: Container(
               height: 50.h,
-              padding: EdgeInsets.only(left: 20,right: 20),
+              padding: EdgeInsets.only(left: 20, right: 20),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(25),
                 border: Border.all(color: Colors.black12, width: 1),
@@ -70,7 +70,7 @@ class ChatScreen extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                //  height: MediaQuery.of(context).size.height * 1,
+                  //  height: MediaQuery.of(context).size.height * 1,
                   child: ListView.builder(
                     itemCount: messages.length,
                     shrinkWrap: true,

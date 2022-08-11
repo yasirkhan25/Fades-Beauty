@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:fades_and_beauty/core/constants/colors/colors.dart';
+import 'package:fades_and_beauty/ui/screens/slider_screens/slider_screen.dart';
 import 'package:flutter/material.dart';
-import 'authentications/slider/slider_screen.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SplashScreen extends StatefulWidget {

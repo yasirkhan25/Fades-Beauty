@@ -2,13 +2,14 @@ import 'package:fades_and_beauty/core/constants/colors/colors.dart';
 import 'package:fades_and_beauty/core/constants/custom_buttons/custom_button.dart';
 import 'package:fades_and_beauty/core/constants/custom_containers/custom_textfileld.dart';
 import 'package:fades_and_beauty/core/constants/custom_containers/decorated_container.dart';
-import 'package:fades_and_beauty/ui/screens/authentications/signup/signup_screen.dart';
 import 'package:fades_and_beauty/ui/screens/experience_level/experience_level.dart';
 import 'package:fades_and_beauty/ui/screens/home/base_screen.dart';
 import 'package:fades_and_beauty/ui/screens/home/home_screen.dart';
 import 'package:fades_and_beauty/ui/screens/my_profile/my_profile.dart';
+import 'package:fades_and_beauty/ui/screens/portfolio_screen/portfolio_screen.dart';
 import 'package:fades_and_beauty/ui/screens/profession/choose_profession.dart';
 import 'package:fades_and_beauty/ui/screens/select_date/date_selection.dart';
+import 'package:fades_and_beauty/ui/screens/user_screens_flow/user_home_screen/user_home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -87,7 +88,7 @@ class LogInScreen extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => BaseScreen()),
+                            builder: (context) => PortfolioScreen()),
                       );
                     },
                     child: CustomButton(

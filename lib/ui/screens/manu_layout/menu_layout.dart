@@ -1,6 +1,7 @@
 import 'package:fades_and_beauty/core/constants/colors/colors.dart';
 import 'package:fades_and_beauty/ui/screens/home/home_screen.dart';
 import 'package:fades_and_beauty/ui/screens/my_profile/my_profile.dart';
+import 'package:fades_and_beauty/ui/screens/home/base_screen.dart';
 import 'package:fades_and_beauty/ui/screens/notification/notification_screen.dart';
 import 'package:fades_and_beauty/ui/screens/seller_mode/seller_mode_profile.dart';
 import 'package:fades_and_beauty/ui/screens/user_screens_flow/setting_screen/setting_screen.dart';
@@ -175,7 +176,7 @@ class MenuDashBoardPage extends StatelessWidget {
                 InkWell(
                   onTap: () {
                     Navigator.push(
-                        context, MaterialPageRoute(builder: (context) => SettingScreen()));
+                        context, MaterialPageRoute(builder: (context) => BaseScreen()));
                   },
                   child: Container(
                     height: 40.h,

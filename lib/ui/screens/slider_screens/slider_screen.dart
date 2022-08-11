@@ -1,5 +1,5 @@
 import 'package:fades_and_beauty/core/constants/custom_containers/custom_page_layout.dart';
-import 'package:fades_and_beauty/ui/screens/authentications/login/login_screen.dart';
+import 'package:fades_and_beauty/ui/screens/auth_screens/login/login_screen.dart';
 import 'package:fades_and_beauty/ui/screens/user_vendor/user_vendor_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
